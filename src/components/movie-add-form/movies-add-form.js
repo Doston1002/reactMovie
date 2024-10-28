@@ -48,7 +48,6 @@ const { name, viewers }= this.state
             onChange={this.changeHandlerInput}
             name='viewers'
             value={viewers}
-          
         />
         <button type='submit' className='btn btn-outline-dark'>
             Qo'shish
