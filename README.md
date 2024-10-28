@@ -1,3 +1,6 @@
+![image](https://github.com/user-attachments/assets/fcc4f37a-6d27-40b0-9389-d6498bdf31d4)
+![image](https://github.com/user-attachments/assets/7091335a-f5e8-4c1c-a0ae-3f6104574470)
+
 <<<<<<< HEAD
 # reactMovie
 =======
