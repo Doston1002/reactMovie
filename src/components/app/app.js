@@ -7,7 +7,6 @@ import AppFilter from '../app-filter/app-filter';
 import MovieList from '../movie-list/movie-list';
 import MoviesAddForm from '../movie-add-form/movies-add-form';
 
-
 class App extends Component {
 	constructor(props) {
 		super(props);
@@ -39,8 +38,7 @@ class App extends Component {
 	addForm =item=> {
 		const newItem ={ name:item.name, viewers:item.viewers, id:uuidv4(), favourite:false, like:false}
 		this.setState(({data})=>({
-			data: [...data, newItem ],
-			
+			data: [...data, newItem ]
 			
 		}))
 		
@@ -61,10 +59,8 @@ class App extends Component {
 		if (term.length === 0) {
 			return arr
 		}
-
 		return arr.filter(item => item.name.toLowerCase().indexOf(term) > -1)
 	}
-
 filterHandler= (arr, filter)=>{
 	switch (filter) {
 		case 'popular':
