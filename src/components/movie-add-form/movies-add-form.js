@@ -5,7 +5,7 @@ class MoviesAddForm extends Component {
         super(props)
         this.state={
             name:'',
-            views:''
+            viewers:''
         }
     }
     changeHandlerInput=(e)=>{
@@ -16,16 +16,16 @@ class MoviesAddForm extends Component {
 
     addFormHandler=e=>{
         e.preventDefault();
-        this.props.addForm({ name: this.state.name, viewers: this.state.views})
+        this.props.addForm({ name: this.state.name, viewers: this.state.viewers})
         this.setState({
             name: '',
-			views: '',
+			viewers: '',
         })
    
         
     }
     render(){
-const { name, views }= this.state
+const { name, viewers }= this.state
 
    
   return (
@@ -46,8 +46,8 @@ const { name, views }= this.state
             className='form-control new-post-label'
             placeholder="Nechi marotaba ko'rilgan?"
             onChange={this.changeHandlerInput}
-            name='views'
-            value={views}
+            name='viewers'
+            value={viewers}
           
         />
         <button type='submit' className='btn btn-outline-dark'>

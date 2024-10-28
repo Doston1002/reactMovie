@@ -1,8 +1,7 @@
-import { useState } from 'react'
 import './movie-list.css'
 import MovieListItem from '../movie-list-item/movie-list-item'
 
-const MovieList = ({data, onDelete, onToggleFavourite, onToggleLike}) => {
+const MovieList = ({data, onDelete, onToggleProp}) => {
 	return (
 		<ul className='movie-list'>
 			{
@@ -13,8 +12,8 @@ const MovieList = ({data, onDelete, onToggleFavourite, onToggleLike}) => {
 					favourite={item.favourite}
 					like={item.like}
 					onDelete={()=> onDelete(item.id)}
-					onToggleFavourite={()=>onToggleFavourite(item.id)}
-					onToggleLike={()=>onToggleLike(item.id)}
+					onToggleProp={e=>onToggleProp(item.id, e.currentTarget.getAttribute('data-toggle'))}
+					
 					/>
 				))
 			}
